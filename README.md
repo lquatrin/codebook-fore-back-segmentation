@@ -14,6 +14,16 @@ Codebook Foreground-Background segmentation application, based on [*Kim et al.* 
 
 * Visual Studio 2017
 
+* [OpenCV 4.0.1](https://opencv.org/)
+
+    * [Documentation](https://docs.opencv.org/4.0.1/)
+    
+    * Must set OPENCV_PATH to "../opencv/build/"
+
+    * Must copy .dll files to bin folder
+
+* [OpenCV C++ Tutorial](https://www.opencv-srf.com)
+    
 ### Application command line usage
 
 ---
