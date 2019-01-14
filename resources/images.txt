@@ -1,0 +1,2 @@
+../resources/r1.jpg
+../resources/r2.jpg

@@ -1,18 +1,40 @@
-#include <iostream>
+#include <cstdio>
 
-#include <opencv2/opencv.hpp>
+#include "codebooksmanager.h"
+CodeBookColorSpace clrsp = CodeBookColorSpace::RGB;
+CodeBookManager cbm(clrsp);
 
-int main(int argc, char* argv[])
+void cbImage ()
 {
-  std::cout << "Codebook Foreground-Background Subtraction" << std::endl;
+  cbm.CbImage();
+}
 
-  cv::String w_name = cv::String("Codebook Foreground-Background Subtraction");
+void cbVideo ()
+{
+  cbm.CbVideo();
+}
 
-  cv::namedWindow(w_name);
+void cbVideoStreaming()
+{
+  cbm.CbVideoStreaming();
+}
 
-  cv::waitKey(0); // Wait for any keystroke in the window
+int main()
+{
+    void(*f[3])();
+    f[0] = cbImage;
+    f[1] = cbVideo; 
+    f[2] = cbVideoStreaming;
 
-  cv::destroyWindow(w_name);
+    int n;
+    printf(". Image           - 1\n");
+    printf(". Video           - 2\n");
+    printf(". Video Streaming - 3\n");
+    printf(". Exit            - 0\n");
+    scanf_s("%d", &n);
+    
+    if(n > 0 && n < 4)
+        f[n-1]();
 
-  return 0;
+    return 0;
 }

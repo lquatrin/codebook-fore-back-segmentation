@@ -11,6 +11,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\CIEDE2000.h" />
+    <ClInclude Include="src\codebook.h" />
+    <ClInclude Include="src\codebooksmanager.h" />
+    <ClInclude Include="src\codeword.h" />
+    <ClInclude Include="src\imageprocessing.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CIEDE2000.cpp" />
+    <ClCompile Include="src\codebook.cpp" />
+    <ClCompile Include="src\codebooksmanager.cpp" />
+    <ClCompile Include="src\codeword.cpp" />
+    <ClCompile Include="src\imageprocessing.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
