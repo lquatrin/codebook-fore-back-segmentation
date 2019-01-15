@@ -1,2 +1,3 @@
-../resources/v1.avi
-../resources/v2.wmv
+../resources/v_b1.mp4
+../resources/v_b2.mp4
+../resources/v_f.mp4

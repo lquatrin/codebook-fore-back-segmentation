@@ -80,8 +80,9 @@ void CodeBookManager::CbVideo ()
       getchar();
       return;
     }
+
     cv::Mat frame;
-    out.open("VideoOutput.mpeg", cv::VideoWriter::fourcc('P', 'I', 'M', '1'), 60, cv::Size(im_cols, im_rows));
+    out.open("VideoOutput.mkv", cv::VideoWriter::fourcc('X', '2', '6', '4'), 60, cv::Size(im_cols, im_rows));
     while (captureFore.read(frame))
     {
       cv::Mat frameFore = frame.clone();

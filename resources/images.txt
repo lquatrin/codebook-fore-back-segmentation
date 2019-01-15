@@ -1,2 +1,2 @@
-../resources/r1.jpg
-../resources/r2.jpg
+../resources/p_r1.jpg
+../resources/p_r2.jpg
