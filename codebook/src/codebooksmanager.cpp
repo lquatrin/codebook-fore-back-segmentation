@@ -12,7 +12,7 @@
 void CodeBookManager::CbImage ()
 {
   std::vector<std::string> images = GetPaths("../resources/images.txt");
-  if ((int)images.size() > 1)
+  if (images.size() > 1)
   {
     for (int i = 0; i < (int)images.size() - 1; i++)
     {
@@ -50,6 +50,7 @@ void CodeBookManager::CbImage ()
 #endif
 
     imshow("CodeBook BackGround Subtracion - Image", BackGroundSubtraction(frame, mask));
+    //imwrite("resimage.jpg", BackGroundSubtraction(frame, mask));
     cv::waitKey(0);
   }
 }
@@ -59,7 +60,7 @@ void CodeBookManager::CbVideo ()
   clock_t start;
   double diff;
   std::vector<std::string> videos = GetPaths("../resources/videos.txt");
-  if ((int)videos.size() > 1)
+  if (videos.size() > 1)
   {
     start = clock();
     cv::VideoCapture captureBack;
