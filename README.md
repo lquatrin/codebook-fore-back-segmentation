@@ -29,3 +29,9 @@ Codebook Foreground-Background segmentation application, based on [*Kim et al.* 
 ```bash
 *.exe [colorspace] [name or "live"]
 ```
+
+### Example
+
+---
+
+![Screenshot](resources/ex_image.jpg)
