@@ -19,22 +19,22 @@ CodeBook::~CodeBook () {}
 
 int CodeBook::SearchCodeWord (float values[], float thresholds[])
 {
-    // Para cada CodeWord dentro do CodeBook
-    // selecionado:
-    for(int i = 0 ; i < (int)codewords.size() ; i++)
+  // Para cada CodeWord dentro do CodeBook
+  // selecionado:
+  for(int i = 0 ; i < (int)codewords.size() ; i++)
+  {
+    // Cálcula se o píxel de entrada corresponde
+    // ao CodeWord selecionado. Caso afirmativo,
+    // retorna o index deste CodeWord
+    if(IsBackground(values, thresholds, i))
     {
-        // Cálcula se o píxel de entrada corresponde
-        // ao CodeWord selecionado. Caso afirmativo,
-        // retorna o index deste CodeWord
-        if(IsBackground(values, thresholds, i))
-        {
-            CodeWord aux = codewords[i];
-            codewords[i] = codewords[0];
-            codewords[0] = aux;
-            return 0;
-        }
+      CodeWord aux = codewords[i];
+      codewords[i] = codewords[0];
+      codewords[0] = aux;
+      return 0;
     }
-    return -1;
+  }
+  return -1;
 }
 
 ///////////////////////////////////////////////////////////////////

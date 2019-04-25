@@ -57,12 +57,9 @@ void CodeBookManager::CbImage ()
 
 void CodeBookManager::CbVideo ()
 {
-  clock_t start;
-  double diff;
   std::vector<std::string> videos = GetPaths("../resources/videos.txt");
   if (videos.size() > 1)
   {
-    start = clock();
     cv::VideoCapture captureBack;
     cv::VideoWriter out;
     for (int i = 0; i < (int)videos.size() - 1; i++)
@@ -107,9 +104,6 @@ void CodeBookManager::CbVideo ()
     captureFore.release();
     CvCapture* capture = 0;
   }
-  diff = (std::clock() - start) / (double)CLOCKS_PER_SEC;
-  std::cout << "printf: " << diff << '\n';
-  getchar(); getchar(); getchar();
 }
 
 void CodeBookManager::CbVideoStreaming ()

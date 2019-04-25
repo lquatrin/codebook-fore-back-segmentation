@@ -4,8 +4,6 @@ Codebook Foreground-Background segmentation application, based on [*Kim et al.* 
 
 * Kyungnam Kim, Thanarat H. Chalidabhongse, David Harwood, Larry Davis, Real-time foreground–background segmentation using codebook model, Real-Time Imaging, Volume 11, Issue 3, 2005, Pages 172-185, ISSN 1077-2014, https://doi.org/10.1016/j.rti.2004.12.004.
 
-* Abstract: We present a real-time algorithm for foreground–background segmentation. Sample background values at each pixel are quantized into codebooks which represent a compressed form of background model for a long image sequence. This allows us to capture structural background variation due to periodic-like motion over a long period of time under limited memory. The codebook representation is efficient in memory and speed compared with other background modeling techniques. Our method can handle scenes containing moving backgrounds or illumination variations, and it achieves robust detection for different types of videos. We compared our method with other multimode modeling techniques. In addition to the basic algorithm, two features improving the algorithm are presented—layered modeling/detection and adaptive codebook updating. For performance evaluation, we have applied perturbation detection rate analysis to four background subtraction algorithms and two videos of different types of scenes.
-
 ### Project settings
 
 ---
@@ -21,6 +19,8 @@ Codebook Foreground-Background segmentation application, based on [*Kim et al.* 
     * Copy .dll files to bin/x64/(Release, Debug) folder
 
 * [OpenCV C++ Tutorial](https://www.opencv-srf.com)
+
+* For videos, must download .dll from https://github.com/cisco/openh264/releases
     
 ### Application command line usage
 
