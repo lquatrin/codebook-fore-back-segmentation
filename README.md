@@ -22,14 +22,6 @@ Codebook Foreground-Background segmentation application, based on [*Kim et al.* 
 
 * For videos, must download .dll from https://github.com/cisco/openh264/releases
     
-### Application command line usage
-
----
-
-```bash
-*.exe [colorspace] [name or "live"]
-```
-
 ### Example
 
 ---
